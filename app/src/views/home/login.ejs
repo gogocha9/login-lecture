@@ -6,14 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="/css/home/login.css">
     <script src="/js/home/login.js" defer></script>
     <title>Login</title>
 </head>
 
 <body>
-    <input id="id" type="text" placeholder="ID"><br>
-    <input id="psword" type="password" placeholder="PW"><br>
-    <button>로그인</button>
+    <div class="login-page">
+        <div class="form">
+          <form class="login-form">
+            <input id="id" type="text" placeholder="ID"/>
+            <input id="psword" type="password" placeholder="PW"/>
+            <button>login</button>
+            <p class="message">Not registered? <a href="/register">Create an account</a></p>
+          </form>
+        </div>
+      </div>
 </body>
 
 </html>
