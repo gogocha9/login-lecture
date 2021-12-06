@@ -10,8 +10,8 @@ const output = {
 };
 
 const users = {
-    id: ["woorimIT", "나개발", "김팀장"],
-    psword: ["1234", "1234", "123456"],
+    id: ["woorimIT", "gogocha22", "나개발", "김팀장"],
+    psword: ["1234", "cha02099!","1234", "123456"],
 };
 
 const process = {
@@ -29,8 +29,8 @@ const process = {
         }
 
         return res.json({
-            success: true,
-            msg: "로그인에 실패하셨습니다."
+            success: false,
+            msg: "로그인에 실패하셨습니다.",
         });
 
     },
