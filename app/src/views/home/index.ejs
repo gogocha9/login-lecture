@@ -1,15 +1,81 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/css/home/main.css">
 </head>
 
 <body>
-    여기는 루트입니다.
+    <div id="header">
+        <div class="header_top">
+            <div class="header_left"></div>
+            <div class="logo">
+                <span>#</span>
+                <h1>청년의꿈</h1>
+            </div>
+
+            <div class="header_right">
+                <ul>
+                    <li>
+                        <ion-icon name="search-outline"></ion-icon>
+                    </li>
+                    <li><a href="/login">로그인</a></li>
+                    <li><button onclick="location.href='/register'">회원가입</button></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header_bottom">
+            <ul>
+                <li><a href="#">소개</a></li>
+                <li><a href="#">청문홍답</a></li>
+                <li><a href="#">홍문청답</a></li>
+                <li><a href="#">칼럼</a></li>
+                <li><a href="#">커뮤니티</a></li>
+                <li><a href="#">동아리</a></li>
+                <li><a href="#">투표</a></li>
+                <li><a href="#">활동</a></li>
+                <li><a href="#">공지/지원</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="contents">
+        <div class="img">
+            <img src="/img/home/main.png" alt="main">
+        </div>
+
+        <div class="board">
+            <div class="box">
+                <div class="title">
+                    <span>청문홍답(靑問洪答)</span>
+                    <button>더보기</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title">
+                    <span>홍문청답(洪問靑答)</span>
+                    <button>더보기</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title">
+                    <span>정치/칼럼 게시판</span>
+                    <button>더보기</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer"></div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
