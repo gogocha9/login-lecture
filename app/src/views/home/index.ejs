@@ -5,74 +5,304 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Document</title>
     <link rel="stylesheet" href="/css/home/main.css">
 </head>
 
 <body>
-    <div id="header">
-        <div class="header_top">
-            <div class="header_left"></div>
-            <div class="logo">
-                <span>#</span>
-                <h1>청년의꿈</h1>
-            </div>
+    <div id="wrap">
+        <!-- header -->
+        <div id="wrap_header">
+            <div class="header">
+                <div class="header_logo">
+                    <h1><span>#</span>청년의꿈</h1>
+                    <ul>
+                        <li><a href="#" class="active">홈</a></li>
+                        <li><a href="#">윤문청답</a></li>
+                        <li><a href="#">청문윤답</a></li>
+                        <li><a href="#">인기답</a></li>
+                    </ul>
+                </div>
 
-            <div class="header_right">
-                <ul>
-                    <li>
-                        <ion-icon name="search-outline"></ion-icon>
-                    </li>
-                    <li><a href="/login">로그인</a></li>
-                    <li><button onclick="location.href='/register'">회원가입</button></li>
-                </ul>
+                <div class="header_gnb">
+                    <ul>
+                        <li><a href="/login">로그인</a></li>
+                        <li><a href="#">
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </a></li>
+                        <li><a href="#">
+                                <ion-icon name="grid-outline"></ion-icon>
+                            </a></li>
+                        <li><a href="#">
+                                <ion-icon name="search-outline"></ion-icon>
+                            </a></li>
+                    </ul>
+                </div>
             </div>
         </div>
+        <!-- //header -->
 
-        <div class="header_bottom">
-            <ul>
-                <li><a href="#">소개</a></li>
-                <li><a href="#">청문홍답</a></li>
-                <li><a href="#">홍문청답</a></li>
-                <li><a href="#">칼럼</a></li>
-                <li><a href="#">커뮤니티</a></li>
-                <li><a href="#">동아리</a></li>
-                <li><a href="#">투표</a></li>
-                <li><a href="#">활동</a></li>
-                <li><a href="#">공지/지원</a></li>
-            </ul>
+        <!-- content -->
+        <div id="wrap_content">
+            <div class="content">
+                <div class="content_tit">
+                    <p>지금,<span>인기답</span></p>
+                </div>
+
+                <div class="content_board">
+                    <div class="box">
+                        <div class="board_content">
+                            <div class="board_content_title">
+                                <span>신기한 에스파 윈터 티저</span>
+                            </div>
+                            <div class="board_content_writer">
+                                <span>홍준표</span>
+                            </div>
+                        </div>
+                        <div class="board_thumbnail">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="board_content">
+                            <div class="board_content_title">
+                                <span>아이유 커스텀 마이크 탐내는 아이유 아빠ㅋㅋㅋㅋ.jpg</span>
+                            </div>
+                            <div class="board_content_writer">
+                                <span>안녕</span>
+                            </div>
+                        </div>
+                        <div class="board_thumbnail">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="board_content">
+                            <div class="board_content_title">
+                                <span>카카오 반팔티에 진심인 사람</span>
+                            </div>
+                            <div class="board_content_writer">
+                                <span>차영현</span>
+                            </div>
+                        </div>
+                        <div class="board_thumbnail">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="board_content">
+                            <div class="board_content_title">
+                                <span>[놀토] 요즘 태연한테 자주 혼나는 멤버.jpgif</span>
+                            </div>
+                            <div class="board_content_writer">
+                                <span>몰라</span>
+                            </div>
+                        </div>
+                        <div class="board_thumbnail">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="board_content">
+                            <div class="board_content_title">
+                                <span>5년전 엄마가 해준 고기조림을 먹겠다는 딸.jpg</span>
+                            </div>
+                            <div class="board_content_writer">
+                                <span>아이유</span>
+                            </div>
+                        </div>
+                        <div class="board_thumbnail">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- //content -->
+
+        <!-- board -->
+        <div id="wrap_board">
+            <div class="board">
+                <div class="board_tit">
+                    <p><span>윤문청답</span></p>
+                    <a href="#"><ion-icon name="add-outline"></ion-icon><span>더보기</span></a>
+                </div>
+
+                <div class="content_board">
+                    <div class="box">
+                        <div class="board_content">
+                            <div class="board_content_title">
+                                <span>신기한 에스파 윈터 티저</span>
+                            </div>
+                            <div class="board_content_writer">
+                                <span>홍준표</span>
+                            </div>
+                        </div>
+                        <div class="board_thumbnail">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="board_content">
+                            <div class="board_content_title">
+                                <span>아이유 커스텀 마이크 탐내는 아이유 아빠ㅋㅋㅋㅋ.jpg</span>
+                            </div>
+                            <div class="board_content_writer">
+                                <span>안녕</span>
+                            </div>
+                        </div>
+                        <div class="board_thumbnail">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="board_content">
+                            <div class="board_content_title">
+                                <span>카카오 반팔티에 진심인 사람</span>
+                            </div>
+                            <div class="board_content_writer">
+                                <span>차영현</span>
+                            </div>
+                        </div>
+                        <div class="board_thumbnail">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="board_content">
+                            <div class="board_content_title">
+                                <span>[놀토] 요즘 태연한테 자주 혼나는 멤버.jpgif</span>
+                            </div>
+                            <div class="board_content_writer">
+                                <span>몰라</span>
+                            </div>
+                        </div>
+                        <div class="board_thumbnail">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="board_content">
+                            <div class="board_content_title">
+                                <span>5년전 엄마가 해준 고기조림을 먹겠다는 딸.jpg</span>
+                            </div>
+                            <div class="board_content_writer">
+                                <span>아이유</span>
+                            </div>
+                        </div>
+                        <div class="board_thumbnail">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="board">
+                <div class="board_tit">
+                    <p><span>청문윤답</span></p>
+                    <a href="#"><ion-icon name="add-outline"></ion-icon><span>더보기</span></a>
+                </div>
+
+                <div class="content_board">
+                    <div class="box">
+                        <div class="board_content">
+                            <div class="board_content_title">
+                                <span>신기한 에스파 윈터 티저</span>
+                            </div>
+                            <div class="board_content_writer">
+                                <span>홍준표</span>
+                            </div>
+                        </div>
+                        <div class="board_thumbnail">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="board_content">
+                            <div class="board_content_title">
+                                <span>아이유 커스텀 마이크 탐내는 아이유 아빠ㅋㅋㅋㅋ.jpg</span>
+                            </div>
+                            <div class="board_content_writer">
+                                <span>안녕</span>
+                            </div>
+                        </div>
+                        <div class="board_thumbnail">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="board_content">
+                            <div class="board_content_title">
+                                <span>카카오 반팔티에 진심인 사람</span>
+                            </div>
+                            <div class="board_content_writer">
+                                <span>차영현</span>
+                            </div>
+                        </div>
+                        <div class="board_thumbnail">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="board_content">
+                            <div class="board_content_title">
+                                <span>[놀토] 요즘 태연한테 자주 혼나는 멤버.jpgif</span>
+                            </div>
+                            <div class="board_content_writer">
+                                <span>몰라</span>
+                            </div>
+                        </div>
+                        <div class="board_thumbnail">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="board_content">
+                            <div class="board_content_title">
+                                <span>5년전 엄마가 해준 고기조림을 먹겠다는 딸.jpg</span>
+                            </div>
+                            <div class="board_content_writer">
+                                <span>아이유</span>
+                            </div>
+                        </div>
+                        <div class="board_thumbnail">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //board -->
+
+        <!-- footer -->
+        <div id="wrap_footer">
+            <div class="footer">
+                <div class="footer_tit">
+                    <h1><span>#</span>청년의꿈</h1>
+                </div>
+                <div class="footer_sns">
+                    <ul>
+                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- //footer -->
     </div>
-
-    <div id="contents">
-        <div class="img">
-            <img src="/img/home/main.png" alt="main">
-        </div>
-
-        <div class="board">
-            <div class="box">
-                <div class="title">
-                    <span>청문홍답(靑問洪答)</span>
-                    <button>더보기</button>
-                </div>
-            </div>
-            <div class="box">
-                <div class="title">
-                    <span>홍문청답(洪問靑答)</span>
-                    <button>더보기</button>
-                </div>
-            </div>
-            <div class="box">
-                <div class="title">
-                    <span>정치/칼럼 게시판</span>
-                    <button>더보기</button>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div id="footer"></div>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
