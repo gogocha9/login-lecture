@@ -166,9 +166,7 @@ font-family: 'Gothic A1', sans-serif;
 {
     font-size: 2em;
     color: #777;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: none;
 }
 /* //wrap_header */
 
@@ -433,7 +431,7 @@ font-family: 'Gothic A1', sans-serif;
         display: none;
     }
 
-    .menubar .open
+    .header .header_gnb .menubar
     {
         display: block;
     }
