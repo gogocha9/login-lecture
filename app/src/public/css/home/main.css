@@ -15,6 +15,7 @@ font-family: 'Gothic A1', sans-serif;
 {
     width: 100%;
     height: 100%;
+    transition: .3s;
 }
 
 #wrap_header
@@ -167,6 +168,137 @@ font-family: 'Gothic A1', sans-serif;
     font-size: 2em;
     color: #777;
     display: none;
+}
+
+.menu
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 270px;
+    height: 100vh;
+    background: #f3f3f3;
+    z-index: 9;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transform: translateX(300px);
+    transition: 0.3s;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.menu .close
+{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 1.5em;
+    border-radius: 50%;
+    padding: 7px;
+    background: #fff;
+    color: #555;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_gnb
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-10%);
+    transition: .2s;
+}
+
+.menu.active .menu_gnb
+{
+    transform: translateY(0);
+}
+
+.menu_gnb_login
+{
+    width: 100%;
+    text-align: end;
+    padding: 30px 0 20px 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+
+.menu_gnb_login a
+{
+    text-decoration: none;
+    color: #777;
+    font-size: 17px;
+}
+
+.menu_gnb_login a:hover
+{
+    color: #999;
+}
+
+.menu_gnb ul
+{
+    width: 100%;
+    background: #fff;
+}
+
+.menu_gnb ul .main_menu
+{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 12px 20px;
+}
+
+.menu_gnb ul .main_menu span
+{
+    color: #333;
+}
+
+.sub_menu
+{
+    position: absolute;
+    visibility: hidden;
+    transform: translateY(-10%);
+}
+
+.sub_menu li
+{
+    padding: 12px 30px;
+    list-style: none;
+}
+
+.sub_menu li a
+{
+    text-decoration: none;
+    color: #555;
+}
+
+.main_menu.active .sub_menu
+{
+    position: relative;
+    visibility: visible;
+    display: block;
+    transition: .3s;
+    transform: translateY(0);
+}
+
+.main_menu_tit
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_menu.active .main_menu_tit span:nth-child(2)
+{
+    transform: rotate(180deg);
+    transition: .2s;
 }
 /* //wrap_header */
 
@@ -436,6 +568,18 @@ font-family: 'Gothic A1', sans-serif;
         display: block;
     }
 
+    .menu.active
+    {
+        transform: translateX(0);
+    }
+
+    #wrap.active
+    {
+        position: fixed;
+        background: rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
     /* //wrap_header */
 
     /* wrap_content */
@@ -475,6 +619,5 @@ font-family: 'Gothic A1', sans-serif;
         margin: 0;
         align-items: flex-end;
     }
-
     /* //wrap_footer */
 }
