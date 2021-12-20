@@ -21,6 +21,14 @@ const output = {
         logger.info(`GET /find 304 "ID / PW 찾기 화면으로 이동"`);
         res.render("home/find");
     },
+    board_01: (req, res) => {
+        logger.info(`GET /find 304 "ID / 윤문청답 화면으로 이동"`);
+        res.render("home/board_01");
+    },
+    board_02: (req, res) => {
+        logger.info(`GET /find 304 "ID / 청문윤답 화면으로 이동"`);
+        res.render("home/board_02");
+    },
 };
 
 const process = {

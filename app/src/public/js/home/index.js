@@ -5,6 +5,7 @@ const menu = document.querySelector(".menu");
 const close = document.querySelector(".close");
 const wrap = document.querySelector("#wrap");
 const main_menu = document.querySelectorAll(".main_menu");
+// const header_menu = document.querySelectorAll(".header_menu");
 
 
 
@@ -28,3 +29,12 @@ function activeLink() {
 
 main_menu.forEach((item) => 
 item.addEventListener("click", activeLink));
+
+// function activeMenu() {
+//     header_menu.forEach((item) =>
+//     item.classList.remove("active"));
+//     this.classList.add("active");
+// }
+
+// header_menu.forEach((item) => 
+// item.addEventListener("click", activeMenu));
