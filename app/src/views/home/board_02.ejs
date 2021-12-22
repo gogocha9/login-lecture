@@ -6,7 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="../../public/css/home/kendo.common.min.css" rel="stylesheet" />
+    <link href="../../public/css/home/kendo.default.min.css" rel="stylesheet" />
+    <link href="../../public/css/home/kendo.default.mobile.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/home/board.css">
+    <script src="https://kendo.cdn.telerik.com/2021.3.1207/js/jquery.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2021.3.1207/js/kendo.all.min.js"></script>
     <script src="/js/home/index.js" defer></script>
 </head>
 
@@ -87,22 +92,199 @@
         </div>
         <!-- //header -->
 
+        <!-- board_button -->
+        <div id="wrap_board_button">
+            <div class="board_button">
+                <ul class="board_condition">
+                    <li class="board_condition_all active">전체</li>
+                    <li class="board_condition_wai">답변대기</li>
+                    <li class="board_condition_com">답변완료</li>
+                    <li class="board_condition_imp">답변불가</li>
+                </ul>
+            </div>
+        </div>
+        <!-- //board_button -->
+
         <!-- board -->
         <div id="wrap_board">
             <div class="board">
-                <div class="board_condition">
-                    <div class="board_condition_all">
-                        <span>전체</span>
-                    </div>
-                    <div class="board_condition_all">
-                        <span>답변대기</span>
-                    </div>
-                    <div class="board_condition_all">
-                        <span>답변완료</span>
-                    </div>
-                    <div class="board_condition_all">
-                        <span>답변불가</span>
-                    </div>
+                <div id="example">
+                    <table id="grid">
+                        <colgroup>
+                            <col style="width:10%"/>
+                            <col style="width:60%"/>
+                            <col style="width:10%" />
+                            <col style="width:10%" />
+                            <col style="width:10%" />
+                        </colgroup>
+                        <thead>
+                            <tr style="font-weight: 700;">
+                                <th data-field="number">번호</th>
+                                <th data-field="title">제목</th>
+                                <th data-field="write">글쓴이</th>
+                                <th data-field="day">날짜</th>
+                                <th data-field="view">조회수</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>11383</td>
+                                <td>준표형 그냥 가만히 계시면 저희가 판 새로 짜드리겠습니다</td>
+                                <td>1004다</td>
+                                <td>1분 전</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>11382</td>
+                                <td>후보교체 4행시</td>
+                                <td>준표순삼</td>
+                                <td>1준전</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>11381</td>
+                                <td>세상최고 밉상만 밉상만 주변에모인 윤석렬ㅋ</td>
+                                <td>본이야</td>
+                                <td>1시간 전</td>
+                                <td>32</td>
+                            </tr>
+                            <tr>
+                                <td>11380</td>
+                                <td>홍카형님이 당대표였다면 김건희를 당차원에서 얼마나 지켜줘야 한다고 보시나요?</td>
+                                <td>홍할배사랑해</td>
+                                <td>2시간 전</td>
+                                <td>445</td>
+                            </tr>
+                            <tr>
+                                <td>11379</td>
+                                <td>윤후보가 만든 새시대준비위원회 어떻게 보시나요??</td>
+                                <td>제임스하든</td>
+                                <td>2시간 전</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>11378</td>
+                                <td>국민들은 바보가 아닙니다!</td>
+                                <td>민심은홍심!</td>
+                                <td>2시간 전</td>
+                                <td>43</td>
+                            </tr>
+                            <tr>
+                                <td>11377</td>
+                                <td>준표형님 대구에서 가장 맛있는 막창집은?</td>
+                                <td>러브코레아노</td>
+                                <td>2시간 전</td>
+                                <td>32</td>
+                            </tr>
+                            <tr>
+                                <td>11376</td>
+                                <td>경기도 교육청의 논란에 대해 어떻게 생각 하시나요?</td>
+                                <td>하늘길</td>
+                                <td>2시간 전</td>
+                                <td>61</td>
+                            </tr>
+                            <tr>
+                                <td>11375</td>
+                                <td>후보교체에 대한 의견이 궁금합니다.</td>
+                                <td>2성과논리</td>
+                                <td>2시간 전</td>
+                                <td>60</td>
+                            </tr>
+                            <tr>
+                                <td>11374</td>
+                                <td>김재원, 조수진에게 징계 왜 안하는거죠?</td>
+                                <td>굿럭홍준표</td>
+                                <td>2시간 전</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>11373</td>
+                                <td>준표형님 이쯤에서 물어봅니다.</td>
+                                <td>사마의준표</td>
+                                <td>2시간 전</td>
+                                <td>116</td>
+                            </tr>
+                            <tr>
+                                <td>11372</td>
+                                <td>청년의힘 창당해주세요.</td>
+                                <td>사시부활</td>
+                                <td>2시간 전</td>
+                                <td>103</td>
+                            </tr>
+                            <tr>
+                                <td>11371</td>
+                                <td>이번 대선요약.jpg</td>
+                                <td>홍전형</td>
+                                <td>2시간 전</td>
+                                <td>138</td>
+                            </tr>
+                            <tr>
+                                <td>11370</td>
+                                <td>민심이 천심</td>
+                                <td>훙준숙</td>
+                                <td>2시간 전</td>
+                                <td>38</td>
+                            </tr>
+                            <tr>
+                                <td>Toyota</td>
+                                <td>Avensis</td>
+                                <td>2008</td>
+                                <td>Saloon</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Audi</td>
+                                <td>Q7</td>
+                                <td>2007</td>
+                                <td>SUV</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Hyundai</td>
+                                <td>Santa Fe</td>
+                                <td>2012</td>
+                                <td>SUV</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Hyundai</td>
+                                <td>Santa Fe</td>
+                                <td>2013</td>
+                                <td>SUV</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Nissan</td>
+                                <td>Qashqai</td>
+                                <td>2007</td>
+                                <td>SUV</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Mercedez</td>
+                                <td>B Class</td>
+                                <td>2007</td>
+                                <td>Hatchback</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Lancia</td>
+                                <td>Ypsilon</td>
+                                <td>2006</td>
+                                <td>Hatchback</td>
+                                <td>Yes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+                    <script>
+                        $(document).ready(function() {
+                            $("#grid").kendoGrid({
+                                height: 550,
+                                sortable: true
+                            });
+                        });
+                    </script>
                 </div>
             </div>
         </div>

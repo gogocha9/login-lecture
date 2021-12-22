@@ -24,6 +24,12 @@ font-family: 'Gothic A1', sans-serif;
     height: 70px;
 }
 
+#wrap_board_button
+{
+    width: 100%;
+    background: #f8f9fa;
+}
+
 #wrap_board
 {
     width: 100%;
@@ -43,6 +49,7 @@ font-family: 'Gothic A1', sans-serif;
 ::-webkit-scrollbar
 {
     width: 7px;
+    height: 7px;
 }
 
 ::-webkit-scrollbar-thumb
@@ -302,15 +309,70 @@ font-family: 'Gothic A1', sans-serif;
 }
 /* //wrap_header */
 
-/* board */
+/* board_button */
+.board_button
+{
+    width: 900px;
+    margin: 0 auto;
+    padding: 15px 0 0 0;
+}
 
-/* //board */
+.board_condition
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.board_condition li
+{
+    list-style: none;
+    margin-right: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.board_condition .board_condition_all
+{
+    background: #fff;
+    color: #333;
+}
+
+.board_condition .board_condition_wai
+{
+    background: #fff;
+    color: #ffc507;
+}
+
+.board_condition .board_condition_com
+{
+    background: #fff;
+    color: #0066da;
+}
+
+.board_condition .board_condition_imp
+{
+    background: #fff;
+    color: #da0000;
+}
+
+.board_condition li.active
+{
+    background: #1471db;
+    color: #fff;
+}
+/* //board_button */
+
+/* board */
 .board
 {
     width: 900px;
     margin: 0 auto;
     padding-top: 20px;
 }
+/* //board */
+
 /* footer */
 .footer_aboutus
 {
