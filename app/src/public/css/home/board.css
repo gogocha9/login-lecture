@@ -72,7 +72,7 @@ font-family: 'Gothic A1', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 900px;
+    width: 1100px;
     margin: 0 auto;
 }
 
@@ -154,6 +154,7 @@ font-family: 'Gothic A1', sans-serif;
     background: #1471db;
     color: #fff;
     font-size: 19px;
+    border-radius: 2px;
 }  
 
 #header .header_gnb ul li:nth-child(2) a,
@@ -309,68 +310,108 @@ font-family: 'Gothic A1', sans-serif;
 }
 /* //wrap_header */
 
-/* board_button */
-.board_button
-{
-    width: 900px;
-    margin: 0 auto;
-    padding: 15px 0 0 0;
-}
-
-.board_condition
-{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.board_condition li
-{
-    list-style: none;
-    margin-right: 10px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-.board_condition .board_condition_all
-{
-    background: #fff;
-    color: #333;
-}
-
-.board_condition .board_condition_wai
-{
-    background: #fff;
-    color: #ffc507;
-}
-
-.board_condition .board_condition_com
-{
-    background: #fff;
-    color: #0066da;
-}
-
-.board_condition .board_condition_imp
-{
-    background: #fff;
-    color: #da0000;
-}
-
-.board_condition li.active
-{
-    background: #1471db;
-    color: #fff;
-}
-/* //board_button */
-
 /* board */
 .board
 {
-    width: 900px;
+    width: 1100px;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 15px;
 }
+
+.board_insert
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.board_insert h1
+{
+    color: #1471db;
+    letter-spacing: 2px;
+}
+
+.board_insert a
+{
+    text-decoration: none;
+    color: #fff;
+    background: #1471db;
+    padding: 10px 20px;
+    border-radius: 2px;
+}
+
+.k-pager-wrap
+{
+    background: #fff;
+}
+
+.k-pager-wrap .k-link.k-state-selected
+{
+    background: #1471db;
+}
+
+.k-widget
+{
+    border-color: #f1f1f1;
+    border-radius: 2px;
+}
+
+.k-grid-header-wrap,
+div.k-grid-header,
+.k-grid-header th.k-header,
+.k-grouping-header,
+.k-grid td
+{
+    border-color: transparent;
+    border: none;
+    background: #fff;
+}
+
+div.k-grid-header
+{
+    padding: 5px 0;
+}
+
+.k-grid-header .k-header>.k-link
+{
+    color: #777;
+    font-weight: 700;
+}
+
+.k-grid-header th.k-header
+{
+    text-align: center;
+}
+
+.k-grid table td
+{
+    text-align: center;
+    color: #777;
+}
+
+.k-grid table td:nth-child(2)
+{
+    text-align: left;
+    color: #333;
+}
+
+.k-grid tr:hover
+{
+    background-color: #f1f1f1;
+}
+
+.k-alt
+{
+    background: #fff;
+}
+
+.k-grid-header-wrap
+{
+    border-style: none;
+}
+
 /* //board */
 
 /* footer */
@@ -482,7 +523,7 @@ font-family: 'Gothic A1', sans-serif;
 .footer
 {
     position: relative;
-    width: 900px;
+    width: 1100px;
     margin: 0 auto 10px auto;
     padding: 10px 0;
     display: grid;

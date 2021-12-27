@@ -25,7 +25,7 @@ function login() {
     .then((res) => res.json())
     .then((res) => {
         if(res.success) {
-            location.href = "/";
+            location.href = "/main";
         } else {
             if(res.err) return alert(res.err);
             alert(res.msg);

@@ -6,14 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="/css/home/easyui/easyui.css">
-    <link rel="stylesheet" type="text/css" href="/css/home/easyui/easyui_icon.css">
-    <link rel="stylesheet" type="text/css" href="/css/home/easyui/easyui_color.css">
-    <script src="/js/home/easyui/easyui.js" defer></script>
+    <!-- kendo UI -->
+    <link href="https://kendo.cdn.telerik.com/2021.3.1207/styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="https://kendo.cdn.telerik.com/2021.3.1207/styles/kendo.default.min.css" rel="stylesheet" />
+    <script src="https://kendo.cdn.telerik.com/2021.3.1207/js/jquery.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2021.3.1207/js/kendo.all.min.js"></script>
+    <!-- kendo UI -->
+
+    <script src="/js/home/testData.js" defer></script>
     <script src="/js/home/index.js" defer></script>
     <link rel="stylesheet" href="/css/home/board.css">
-    <script type="text/javascript" src="/js/home/easyui/jquery.js"></script>
-    <script type="text/javascript" src="/js/home/easyui/jquery_easyui.js"></script>
 </head>
 
 <body>
@@ -104,59 +106,16 @@
         <!-- board -->
         <div id="wrap_board">
             <div class="board">
-                <table id="dg" class="easyui-datagrid" style="width:100%;height:500px"
-                    url="get_users.php" toolbar="#toolbar" pagination="true" rownumbers="true" fitColumns="true"
-                    singleSelect="true">
-                    <thead>
-                        <tr>
-                            <th field="firstname" width="50">First Name</th>
-                            <th field="lastname" width="50">Last Name</th>
-                            <th field="phone" width="50">Phone</th>
-                            <th field="email" width="50">Email</th>
-                        </tr>
-                    </thead>
-                </table>
-                <div id="toolbar">
-                    <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true"
-                        onclick="newUser()">글쓰기</a>
-                    <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-edit" plain="true"
-                        onclick="editUser()">글 수정</a>
-                    <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-cancel" plain="true"
-                        onclick="destroyUser()">글 삭제</a>
+                <div class="board_insert">
+                    <h1>윤문청답</h1>
+                    <a href="/insert">게시글 만들기</a>
                 </div>
+                <div id="grid">
 
-                <div id="dlg" class="easyui-dialog" style="width:430px"
-                    data-options="closed:true,modal:true,border:'thin',buttons:'#dlg-buttons'">
-                    <form id="fm" method="post" novalidate style="margin:0;padding:20px 50px">
-                        <h3>User Information</h3>
-                        <div style="margin-bottom:10px">
-                            <input name="firstname" class="easyui-textbox" required="true" label="First Name:"
-                                style="width:100%">
-                        </div>
-                        <div style="margin-bottom:10px">
-                            <input name="lastname" class="easyui-textbox" required="true" label="Last Name:"
-                                style="width:100%">
-                        </div>
-                        <div style="margin-bottom:10px">
-                            <input name="phone" class="easyui-textbox" required="true" label="Phone:"
-                                style="width:100%">
-                        </div>
-                        <div style="margin-bottom:10px">
-                            <input name="email" class="easyui-textbox" required="true" validType="email" label="Email:"
-                                style="width:100%">
-                        </div>
-                    </form>
-                </div>
-                <div id="dlg-buttons">
-                    <a href="javascript:void(0)" class="easyui-linkbutton c6" iconCls="icon-ok" onclick="saveUser()"
-                        style="width:90px">Save</a>
-                    <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-cancel"
-                        onclick="javascript:$('#dlg').dialog('close')" style="width:90px">Cancel</a>
                 </div>
             </div>
         </div>
         <!-- //board -->
-
 
         <!-- footer -->
         <div id="wrap_footer">
