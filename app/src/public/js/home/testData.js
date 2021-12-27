@@ -26,7 +26,7 @@ $(function() {
     $("#grid").kendoGrid({
         columns:[
             {title:"번호", field:"no_A", width:"50px",
-             template:"<div class='name' onclick='test(`firstColumn`, `#=no_A#`)'>#=no_A#</div>"
+             template:"<div class='name' onclick='move()'>#=no_A#</div>"
             },
             {title:"제목", field:"no_B", width:"200px"},
             {title:"글쓴이", field:"no_C", width:"50px"},
@@ -47,6 +47,6 @@ $(function() {
     });
 });
 
-function test(a, b) {
+function move(a, b) {
     alert("Column: " + a + "\nData : " + b);
 }
