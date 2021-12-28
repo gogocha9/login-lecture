@@ -350,6 +350,7 @@ font-family: 'Gothic A1', sans-serif;
 .k-pager-wrap .k-link.k-state-selected
 {
     background: #1471db;
+    pointer-events: none;
 }
 
 .k-widget
@@ -360,13 +361,22 @@ font-family: 'Gothic A1', sans-serif;
 
 .k-grid-header-wrap,
 div.k-grid-header,
-.k-grid-header th.k-header,
-.k-grouping-header,
-.k-grid td
+.k-grid-header th.k-header
 {
     border-color: transparent;
     border: none;
     background: #fff;
+}
+
+.k-grid td
+{
+    border: none;
+    background: #fff;
+}
+
+.k-grid tr:hover td
+{
+    background: #f1f1f1;
 }
 
 div.k-grid-header
@@ -397,15 +407,26 @@ div.k-grid-header
     color: #333;
 }
 
-.k-grid tr:hover
+.k-pager-wrap .k-link
 {
-    background-color: #f1f1f1;
+    border-color: transparent;
 }
 
-.k-alt
+.k-pager-wrap .k-link:hover
+{
+    background-color: #f1f1f1;
+    border-color: #f1f1f1;
+}
+
+.k-pager-wrap .k-link.k-state-disabled
+{
+    border-color: transparent;
+}
+
+/* .k-alt
 {
     background: #fff;
-}
+} */
 
 .k-grid-header-wrap
 {
