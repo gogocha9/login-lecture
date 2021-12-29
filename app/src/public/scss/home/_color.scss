@@ -27,8 +27,3 @@ $box-shadow: (
     box-shadow-2: rgba(0, 0, 0, .05) 0 6px 24px,
     card-shadow-1: rgba(0, 0, 0, .05) 0 6px 24px,
 );
-
-.box
-{
-    background: map-get($color-form , primary);
-}

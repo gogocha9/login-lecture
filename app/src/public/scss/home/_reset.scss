@@ -17,9 +17,16 @@ $bmjua: (
     font-style: normal,
 );
 
+$Gmarket: (
+    font-family: 'GmarketSansMedium',
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff'),
+    font-weight: normal,
+    font-style: normal,
+);
+
 @font-face {
-    font-family: map-get($aggro, font-family);
-    src: map-get($aggro, src);
+    font-family: map-get($Gmarket, font-family);
+    src: map-get($Gmarket, src);
 }
 // !font
 
@@ -32,13 +39,5 @@ body
     padding: $pd_0;
     margin: $mg_0;
     box-sizing: $border-box;
-}
-
-.box
-{
-    p
-    {
-        font-family: map-get($aggro, font-family);
-        font-size: $font-size-large
-    }
+    font-family: map-get($Gmarket, font-family);
 }
