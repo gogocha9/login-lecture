@@ -1,0 +1,34 @@
+$color-form: (
+    primary: #1471db,
+    primary-dark: #1162be,
+    primary-light: rgba(52, 147, 255, .1),
+    white: #fff,
+    black-100: #111,
+    black-200: #222,
+    black-300: #333,
+    gray-050: #f8f9fa,
+    gray-100: #f1f3f5,
+    gray-200: #e9ecef,
+    gray-300: #dee2e6,
+    gray-400: #ced4da,
+    gray-500: #adb5bd,
+    gray-600: #868e96,
+    gray-700: #495057,
+    gray-800: #343a40,
+    gray-900: #212529,
+    success: #2ac558,
+    warning: #f7ba2a,
+    danger: #ff5a57,
+    info: #2956ff,
+);
+
+$box-shadow: (
+    box-shadow-1: rgba(0, 0, 0, .1) 0 0 8px,
+    box-shadow-2: rgba(0, 0, 0, .05) 0 6px 24px,
+    card-shadow-1: rgba(0, 0, 0, .05) 0 6px 24px,
+);
+
+.box
+{
+    background: map-get($color-form , primary);
+}

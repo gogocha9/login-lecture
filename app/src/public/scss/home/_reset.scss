@@ -1,0 +1,44 @@
+// font
+$font-size-base: 16px;
+$font-size-small: 14px;
+$font-size-large: 20px;
+
+$aggro: (
+    font-family: 'SBAggroL',
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroL.woff') format('woff'),
+    font-weight: normal,
+    font-style: normal,   
+);
+
+$bmjua: (
+    font-family: 'BMJUA',
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff'),
+    font-weight: normal,
+    font-style: normal,
+);
+
+@font-face {
+    font-family: map-get($aggro, font-family);
+    src: map-get($aggro, src);
+}
+// !font
+
+$pd_0: 0;
+$mg_0: 0;
+$border-box: border-box;
+
+body
+{
+    padding: $pd_0;
+    margin: $mg_0;
+    box-sizing: $border-box;
+}
+
+.box
+{
+    p
+    {
+        font-family: map-get($aggro, font-family);
+        font-size: $font-size-large
+    }
+}

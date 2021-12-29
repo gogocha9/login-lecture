@@ -80,7 +80,9 @@
   },
   "scripts": {
     "start": "nodemon ./bin/www.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:scss": "sass src/public/scss/home:src/public/css/home/compiled",
+    "watch:scss": "sass --watch src/public/scss/home:src/public/css/home/compiled"
   },
   "keywords": [],
   "author": "",
