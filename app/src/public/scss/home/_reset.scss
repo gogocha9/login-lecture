@@ -33,11 +33,3 @@ $Gmarket: (
 $pd_0: 0;
 $mg_0: 0;
 $border-box: border-box;
-
-body
-{
-    padding: $pd_0;
-    margin: $mg_0;
-    box-sizing: $border-box;
-    font-family: map-get($Gmarket, font-family);
-}
