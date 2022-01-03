@@ -1,6 +1,6 @@
-const editor = document.getElementById('editor');
+const editor = document.getElementById("editor");
 var quill = new Quill(editor, {
-    debug: 'info',
-    placeholder: 'Compose an epic...',
-    theme: 'snow',
+  debug: "info",
+  placeholder: "Compose an epic...",
+  theme: "snow",
 });

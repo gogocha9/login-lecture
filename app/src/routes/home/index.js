@@ -14,7 +14,6 @@ router.get("/board_02", ctrl.output.board_02);
 router.get("/insert", ctrl.output.insert);
 router.get("/main", ctrl.output.main);
 
-
 router.post("/login", ctrl.process.login);
 router.post("/register", ctrl.process.register);
 

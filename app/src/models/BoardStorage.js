@@ -2,16 +2,11 @@
 
 const db = require("../config/db");
 
-class BoardStorage {
-    static getBoardInfo(bno) {
-        return new Promise((resolve, reject) => {
-            const query = "SELECT * FROM board where bno = ?";
-            db.query(query, [bno], (err, data) => {
-                if (err) reject(`${err}`);
-                else resolve(data[0]);
-            });
-        });
-    }
-}
+const board = db.board(function(err) {
+  if (err) throw err;
+  db.query("SELECT * FROM board", function(err, result, fields) {
+    if(err) throw err;
+  }); 
+});
 
-module.exports = BoardStorage;
+module.exports = board;
